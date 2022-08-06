@@ -119,6 +119,13 @@ main{
     font-size: 20px;
     font-weight: bold;
 }
+#h3-msj{
+    text-align: center;
+}
+
+#p-msj{
+    text-align: center;
+}
 
 /* Resolucion para tablets */
 
@@ -187,7 +194,7 @@ main{
     }
 
     #text-ingreso{
-        font-size: 20px;
+        font-size: 2git 0px;
 
     }
     
