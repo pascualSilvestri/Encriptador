@@ -61,7 +61,8 @@ main{
 #botones{
     width:100%;
     display: flex;
-    justify-content: space-evenly;      
+    justify-content: space-evenly;  
+    padding-bottom: 30px;    
 }
 
 #btn-encriptar{
@@ -69,7 +70,8 @@ main{
     color:#fff;
 }
 #btn-desencriptar{
-    background-color: #ededed;
+    background-color: #D8DFE8;
+    color:#0A3871;
 }
 
 #contenedor-derecho{
@@ -78,6 +80,7 @@ main{
     background-color: #ffffff;
     margin:30px;
     border-radius: 30px;
+    box-shadow: 2px 2px 10px 1px #999;
 }
 
 #sin-texto{
@@ -86,7 +89,7 @@ main{
     height:100%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -96,7 +99,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     width:100%;
-    height:100%;
+    height:auto;
 }
 
 #text-salida{
@@ -117,11 +120,18 @@ main{
     border-radius: 30px;
     width:220px;
     height:50px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    border:1px solid #0A3871;  
+}
+
+#btn-copiar{
+    background-color: #ededed;
+    color:#0A3871;
 }
 #h3-msj{
     text-align: center;
+    margin:20px 0 0 0;
 }
 
 #p-msj{
@@ -140,10 +150,13 @@ main{
     }
     #contenedor-derecho{
         width:100%;
-        height:200px;
+        height:0;
+        min-height: 150px;
+        height: auto;
         background-color: #ffffff;
-        margin:30px;
+        margin:10px 30px 30px 30px;
         border-radius: 30px;
+
     }
 
     #dibujo{
@@ -162,7 +175,7 @@ main{
     }
     #contenedor-derecho{
         width:100%;
-        height:auto;
+        height: auto;
         background-color: #ffffff;
         margin:30px;
         border-radius: 30px;
