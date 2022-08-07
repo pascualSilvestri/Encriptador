@@ -183,6 +183,16 @@ main{
 
     }
 
+    #con-texto{
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    #text-salida{
+        min-height: 300px;
+        width: 100%;
+    }
+
     #dibujo{
         display: none;
     }
@@ -215,13 +225,18 @@ main{
         border-radius: 30px;
     }
 
+    #con-texto{
+        margin-bottom: 20px;
+        height: auto
+    }
+
     #dibujo{
         display: none;
     }
 
     
     #text-salida{
-        min-height: 200px;
+        min-height: 300px;
         width: 100%;
     }
 
@@ -243,7 +258,7 @@ main{
 
     #text-ingreso{
         font-size: 18px;
-
+        
     }
 
     #text-ingreso::placeholder{
