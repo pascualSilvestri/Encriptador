@@ -186,6 +186,16 @@ main{
     #dibujo{
         display: none;
     }
+
+    #h1-titulo{
+        font-size: 40px;
+    }
+
+    #div-logo{
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
     
 }
 
@@ -238,6 +248,16 @@ main{
 
     #text-ingreso::placeholder{
         font-size: 25px;
+    }
+
+    #h1-titulo{
+        font-size: 20px;
+        margin:15 20px;
+    }
+    #div-logo{
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
     }
     
 }
