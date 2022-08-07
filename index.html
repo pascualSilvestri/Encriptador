@@ -37,7 +37,7 @@
 
           <button class="btn" id="btn-encriptar" onclick="encriptar(textarea.value)">Encriptar</button>
           
-          <button class="btn" id="btn-desencriptar" onclick="">Desencriptar</button>
+          <button class="btn" id="btn-desencriptar" onclick="desencriptar(textarea.value)">Desencriptar</button>
 
         </div>
 
@@ -48,7 +48,7 @@
 
         <div id="sin-texto">
 
-          <img src="imagenes/Muñeco.png" alt="muñeco" id="dibujo"0/>
+          <img src="imagenes/Muñeco.png" alt="muñeco" id="dibujo"/>
 
           <h3 id="h3-msj">Ningun mensaje fue encontrado</h3>
 
@@ -60,9 +60,9 @@
 
         <div id="con-texto">
 
-            <div id="text-salida">
+            <textarea id="text-salida" readonly="true">
                 
-            </div>
+            </textarea>
             <button class="btn" id="btn-copiar">
                 Copiar
             </button>
