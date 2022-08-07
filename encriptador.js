@@ -1,12 +1,5 @@
 // Variables globales ---------------------------------------
 
-const desencrip = {
-    'ai': 'ai',
-    'enter': "e",
-    'imes': "i",
-    'ober': "o",
-    'ufat': "u"
-  };
 
 const encrip = {
   a: "ai",
@@ -48,14 +41,12 @@ const encrip = {
   9:'9'
 };
 
-
 let textarea = document.getElementById("text-ingreso");
 let buttonEncriptar = document.getElementById("btn-encriptar");
 let buttonDesencriptar = document.getElementById("btn-desencriptar");
 let buttonCopiar = document.getElementById("btn-copiar");
 let divSalida = document.getElementById("text-salida");
-
-let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^/;
+let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^|<|>/;
 
 
 // Funciones -------------------------------
@@ -118,7 +109,7 @@ function encriptar(arg) {
   
 }
 
-function desencriptar(arg) {
+function desencriptar() {
     let texto = textarea.value;
     if(soloMinuscula()&& sinEspecial()){
         let textoSalida = texto
@@ -134,7 +125,7 @@ function desencriptar(arg) {
         mensajeMinuscula();
     }
 
-  }
+}
 
   function mostrarDibujo(){
     let sinTexto = document.getElementById("sin-texto");
@@ -153,13 +144,6 @@ function copiarTexto(){
     textarea.value = '';
 }
 
-
-function mostrarConsola() {
-    let texto = document.getElementById("text-salida").innerText;
-}
-
-
-desencriptar('enter')
 // Eventos ---------
 
 
