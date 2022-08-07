@@ -148,7 +148,6 @@ function copiarTexto(){
 
 // Eventos ---------
 
-btnFondo.addEventListener("click", cambioDeFondo());
 
 buttonEncriptar.addEventListener("click",mostrarDibujo);
 buttonEncriptar.addEventListener("click",sinEspecial);
