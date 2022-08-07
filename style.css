@@ -29,7 +29,22 @@ main{
 
 #div-logo{
     width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 20px;
 }
+
+
+#h1-titulo{
+    color:#0A3871;
+    margin:15px 40px;
+}
+
+
+
 
 #img-logo{
     margin:15px 50px;
@@ -62,7 +77,11 @@ main{
     width:100%;
     display: flex;
     justify-content: space-evenly;  
-    padding-bottom: 30px;    
+    margin:10px;    
+}
+
+#p-pie{
+    margin:10px;
 }
 
 #btn-encriptar{
@@ -222,3 +241,10 @@ main{
     }
     
 }
+
+
+
+
+
+/* Cambio de color fondo */
+

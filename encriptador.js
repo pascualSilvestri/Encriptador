@@ -40,12 +40,13 @@ const encrip = {
   8:'8',
   9:'9'
 };
-
+let body = document.querySelector('body');
 let textarea = document.getElementById("text-ingreso");
 let buttonEncriptar = document.getElementById("btn-encriptar");
 let buttonDesencriptar = document.getElementById("btn-desencriptar");
 let buttonCopiar = document.getElementById("btn-copiar");
 let divSalida = document.getElementById("text-salida");
+let btnFondo = document.getElementById("btn-fondo");
 let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^|<|>/;
 
 
@@ -144,9 +145,10 @@ function copiarTexto(){
     textarea.value = '';
 }
 
+
 // Eventos ---------
 
-
+btnFondo.addEventListener("click", cambioDeFondo());
 
 buttonEncriptar.addEventListener("click",mostrarDibujo);
 buttonEncriptar.addEventListener("click",sinEspecial);
