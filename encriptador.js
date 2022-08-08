@@ -52,6 +52,17 @@ let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^|<|>/;
 
 // Funciones -------------------------------
 
+
+function copiado(){
+  buttonCopiar.style.backgroundColor = '#0A3871';
+  buttonCopiar.style.color = '#fff';
+}
+
+function desCopiar(){
+  buttonCopiar.style.backgroundColor = '#ededed';
+  buttonCopiar.style.color = '#000';
+}
+
 function soloMinuscula(){
     let mensaje = textarea.value;
 
@@ -143,6 +154,7 @@ function copiarTexto(){
     texto.select();
     document.execCommand("copy");
     textarea.value = '';
+    copiado();
 }
 
 
@@ -158,3 +170,4 @@ buttonDesencriptar.addEventListener("click",mostrarDibujo);
 buttonCopiar.addEventListener("click",copiarTexto);
 
 textarea.addEventListener("keyup",mostrarDibujo);
+textarea.addEventListener("click",desCopiar)

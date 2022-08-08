@@ -30,8 +30,8 @@ main{
 #div-logo{
     width:100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex:2 1;
     background-color: #fff;
     border-radius: 0 0 40px 40px;
     margin-bottom: 20px;
@@ -41,6 +41,7 @@ main{
 #h1-titulo{
     color:#0A3871;
     margin:15px 40px;
+    text-align: center;
 }
 
 
@@ -209,7 +210,7 @@ main{
     
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:426px){
     main{
         flex-wrap: wrap;
     }
@@ -267,12 +268,16 @@ main{
 
     #h1-titulo{
         font-size: 20px;
-        margin:15 20px;
+        margin:15 10px;
+    }
+
+    #img-logo{
+        margin:15px 0px 15px 30px;
     }
     #div-logo{
         width:100%;
         display: flex;
-        justify-content: space-evenly;
+        flex:1 1;
     }
     
 }
