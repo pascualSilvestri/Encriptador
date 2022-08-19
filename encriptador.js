@@ -47,7 +47,7 @@ let buttonDesencriptar = document.getElementById("btn-desencriptar");
 let buttonCopiar = document.getElementById("btn-copiar");
 let divSalida = document.getElementById("text-salida");
 let btnFondo = document.getElementById("btn-fondo");
-let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^|<|>/;
+let expresion = /@|\$|%|\(|\)|#|&|"|!|\||°|\-|_|\*|\+|\.|\^|<|>|\´|\;|\=|,/;
 
 
 // Funciones -------------------------------
